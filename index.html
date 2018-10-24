@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parallax Design From Scratch</title>
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/nav.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="img/w3-favicon.png"/>
+</head>
+<body>
+    <a name="home"></a>
+<!--- Start Navigation -->
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/main.js"></script>
+        <!--- Navigation -->
+        <div class="nav-outer">
+            <div class="nav-wrap">
+                <nav class="navigation">
+                    <div class="logo">
+                        <img src="img/logo.png"></div>
+                    <div class='nav nav-menu-style=yoga'>
+                        <ul class="nav-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+<!---END NAVIGATION -->
+	<div class="nav-clear"></div>
+<!--- End Navigation -->
+	<div class="clearfix"></div>
+<!--- Start Slider -->
+		<script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
+		<div class="slide-wrap">
+<!-- IMAGE SLIDES -->
+            <section class="slider">
+                <ul class="slider1">
+                    <li><img src="https://www.w3newbie.com/wp-content/uploads/slider-image-1.png"></li>
+                    <li><img src="https://www.w3newbie.com/wp-content/uploads/slider-image-2.png"></li>
+                    <li><img src="https://www.w3newbie.com/wp-content/uploads/slider-image-3.png"></li>
+                </ul>
+            </section>
+<!--END IMAGE SLIDES -->
+		</div>
+		<script type="text/javascript">
+			$('.slider1').bxSlider({
+				mode: 'fade',
+				captions: false,
+				auto:true,
+				pager:false,
+				
+			});
+			$('.slider2').bxSlider({
+				pager:false,
+				captions: true,
+				maxSlides: 3,
+				minSlides: 1,
+				slideWidth: 230,
+				slideMargin: 10
+			});
+			$('.slider3').bxSlider({
+				mode: 'fade',
+				captions: false,
+				auto:true,
+				pager:false,
+				controls:false,
+			});
+		</script>
+<!--- End Slider -->
+<a name="about"></a>
+    <!-- Start Banner Wrapper -->
+    <div id="banner-wrapper">
+        <h1>Welcome To Our Website</h1>
+        <div class="one-half">
+
+        </div>
+    </div>
+  <p style="text-align: center;"><a href="https://www.w3newbie.com/survey/" target="_blank">Developed by Reign Designs, Inc.</a></p>
+
+</body>
+</html>
